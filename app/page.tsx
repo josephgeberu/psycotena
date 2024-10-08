@@ -46,5 +46,9 @@ export default function Home() {
           bottomRight={services[3]}
         />
       </section>
+      <section className=" px-20 py-12  mt-16" >
+      <PyscologistsGrid />
+      </section>
+
       </main>
 

@@ -6,16 +6,16 @@ import {
   MapPinIcon,
 } from "@heroicons/react/24/solid";
 
-import { ServiceImage, Book, TestimonialImage } from "./assetexport";
+import { ServiceImage, Book, TestimonialImage } from "./_assetexport";
 
 import { serviceContent, testimonials } from "./_constants";
 
-import ServiceCard from "./_components/serviceCard";
-import CustumButton from "./_components/custumButton";
-import InputField from "./_components/inputField";
-import CenteredImageGride from "./_components/centeredImageGrid";
-import TestimonialCard from "./_components/testimonialCard";
-import PyscologistsGrid from "./_components/psycologistGrid";
+import ServiceCard from "./components/serviceCard";
+import CustumButton from "./components/custumButton";
+import InputField from "./components/inputField";
+import CenteredImageGride from "./components/centeredImageGrid";
+import TestimonialCard from "./components/testimonialCard";
+import PyscologistsGrid from "./components/";
 
 const Home = () => {
   const services = serviceContent.map((service) => (

@@ -2,26 +2,95 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.header_section {
+  background-image: url("../public//assets/images/heroback.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../public//assets/images/bodyback.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+.service_section {
+  grid-template-areas:
+    "topLeft middle topRight"
+    "bottomLeft middle bottomRight";
+}
+.service_image {
+  min-width: 300px !important;
+}
+.topLeft {
+  grid-area: topLeft;
+}
+.middle {
+  grid-area: middle;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.topRight {
+  grid-area: topRight;
+}
+.bottomLeft {
+  grid-area: bottomLeft;
+}
+.bottomRight {
+  grid-area: bottomRight;
+}
+
+.callto {
+  background-image: url("../public//assets/images/calltoback.jpg");
+  background-size: cover;
+  background-position: center;
+  filter:contrast(0.7)
+  
+}
+
+.toggle-container {
+  position: relative;
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
+.toggle-label {
+  display: block;
+  width: 60px;
+  height: 30px;
+  background-color: rgba(0, 126, 133, 0.5);
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+.toggle-label .toggle-inner {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: background-color 0.3s;
+}
+
+.toggle-label .toggle-switch {
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  transition: transform 0.3s;
+}
+
+.toggle-checkbox:checked + .toggle-label .toggle-inner {
+  background-color: rgba(0, 126, 133, 1);
+}
+
+.toggle-checkbox:checked + .toggle-label .toggle-switch {
+  transform: translateX(30px);
 }

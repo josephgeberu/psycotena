@@ -49,6 +49,15 @@ export default function Home() {
       <section className=" px-20 py-12  mt-16" >
       <PyscologistsGrid />
       </section>
+      <section className="px-20 py-12 h-[740px] mt-16">
+        <CenteredImageGride
+          topLeft={allTestimonials[0]}
+          middleImage={TestimonialImage}
+          topRight={allTestimonials[1]}
+          bottomLeft={allTestimonials[2]}
+          bottomRight={allTestimonials[3]}
+        />
+      </section>
 
       </main>
 

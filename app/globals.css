@@ -12,7 +12,7 @@ body {
   background-image: url("../public//assets/images/bodyback.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   
 }
 .service_section {

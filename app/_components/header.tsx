@@ -1,5 +1,5 @@
 import CustumButton from "./custumButton";
-import { Book, Hero } from "../_assetexport";
+import { Book } from "../_assetexport";
 import Image from "next/image";
 const Header = () => {
   return (

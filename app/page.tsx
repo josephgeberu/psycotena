@@ -10,14 +10,14 @@ import { ServiceImage, Book, TestimonialImage } from "./_assetexport";
 
 import { serviceContent, testimonials } from "./_constants";
 
-import ServiceCard from "./components/serviceCard";
-import CustumButton from "./components/custumButton";
-import InputField from "./components/inputField";
-import CenteredImageGride from "./components/centeredImageGrid";
-import TestimonialCard from "./components/testimonialCard";
-import PyscologistsGrid from "./components/";
+import ServiceCard from "./_components/serviceCard";
+import CustumButton from "./_components/custumButton";
+import InputField from "./_components/inputField";
+import CenteredImageGride from "./_components/centeredImageGrid";
+import TestimonialCard from "./_components/testimonialCard";
+import PyscologistsGrid from "./_components/psycologistGrid";
 
-const Home = () => {
+export default function Home() {
   const services = serviceContent.map((service) => (
     <ServiceCard
       key={service.title}
@@ -46,10 +46,9 @@ const Home = () => {
           bottomRight={services[3]}
         />
       </section>
-      <section className=" px-20 py-12  mt-16">
-        <PyscologistsGrid />
-      </section>
-      <section className="px-20 py-12 h-[740px] mt-16">
+      <PyscologistsGrid />
+
+      <section className="px-20 py-12 h-[800px] mt-24">
         <CenteredImageGride
           topLeft={allTestimonials[0]}
           middleImage={TestimonialImage}
@@ -130,5 +129,4 @@ const Home = () => {
       </section>
     </main>
   );
-};
-export default Home;
+}

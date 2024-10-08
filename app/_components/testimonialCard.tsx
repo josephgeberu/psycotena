@@ -6,7 +6,7 @@ const TestimonialCard = ({
   autor,
 }: testimonialCardType) => {
   return (
-    <div className="flex gap-5 flex-col items-start p-5  rounded-lg bg-custum-secondary_100 text-custum-gray_50 rotate-45 w-[500px]">
+    <div className="flex gap-5 flex-col items-start p-5  rounded-lg bg-custum-secondary_100 text-custum-gray_50 rotate-45 w-[440px]">
       <div className="text-paragraph leading-loose p-5 shadow-lg text-white bg-custum-primary_50">
         {body}
         <div className="flex items-center ">

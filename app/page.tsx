@@ -72,6 +72,62 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="contact px-20 py-12  text-center" id="contact ">
+        <h1 className="py-9 text-white text-heading_1 uppercase font-bold ">
+          Get in Touch
+        </h1>
+        <div className="flex justify-between ">
+          <form
+            action=" "
+            className="flex flex-col  gap-7 px-12 py-12  bg-custum-secondary_50 text-custum-gray_50 h-[540px]"
+          >
+            <h4 className="text-white text-heading_4 uppercase pb-2">
+              Send Us Your Comments
+            </h4>
+            <InputField
+              placeholder="Write Your Name"
+              type="text"
+              className="px-36 py-3 block rounded-lg text-center "
+            />
+            <InputField
+              placeholder="Write Your Email"
+              type="text"
+              className="px-36 py-3 block rounded-lg text-center"
+            />
+
+            <textarea
+              placeholder="Write Your Comment ...."
+              className="px-36 py-7   rounded-lg text-center"
+            ></textarea>
+            <CustumButton className="py-3 mt-4 bg-custum-primary_75  text-white  w-full    text-heading_6 font-bold rounded-full">
+              <p>Send</p>
+            </CustumButton>
+          </form>
+
+          <div className="flex  items-center justify-center   bg-custum-primary_50 h-[540px] w-[650px]  ">
+            <div className="flex flex-col gap-4 text-white">
+              <div className="flex gap-4">
+                <MapPinIcon width={30} />
+                <h6 className="text-heading_6">Addis Ababa, Ethiopia</h6>
+              </div>
+              <div className="flex gap-4">
+                <PhoneIcon width={30} />
+                <h6 className="text-heading_6">+251 912 345 678</h6>
+              </div>
+
+              <div className="flex gap-4">
+                <EnvelopeIcon width={30} />
+                <h6 className="text-heading_6">psycotena@psycotena.et</h6>
+              </div>
+
+              <div className="flex gap-4">
+                <GlobeAltIcon width={30} />
+                <h6 className="text-heading_6">www.pyscotena.et</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       </main>
 

@@ -58,6 +58,20 @@ export default function Home() {
           bottomRight={allTestimonials[3]}
         />
       </section>
+      <section className=" callto  px-20 py-12 mt-12 text-white  ">
+        <div className="flex flex-col gap-8 w-[700px] py-12">
+          <h2 className="text-white text-heading_2 uppercase font-bold ">
+            transform Your Life with Expert Guidance.
+          </h2>
+          <div>
+            {" "}
+            <CustumButton className="flex bg-custum-primary_100 px-12 py-5  text-white gap-x-5 items-center text-heading_4 font-bold rounded-full">
+              <Image src={Book} width={40} alt="Book" />
+              <p>Book Now</p>
+            </CustumButton>
+          </div>
+        </div>
+      </section>
 
       </main>
 

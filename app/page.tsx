@@ -17,7 +17,7 @@ import CenteredImageGride from "./_components/centeredImageGrid";
 import TestimonialCard from "./_components/testimonialCard";
 import PyscologistsGrid from "./_components/psycologistGrid";
 
-export default function Home() {
+const Home = () => {
   const services = serviceContent.map((service) => (
     <ServiceCard
       key={service.title}
@@ -46,8 +46,8 @@ export default function Home() {
           bottomRight={services[3]}
         />
       </section>
-      <section className=" px-20 py-12  mt-16" >
-      <PyscologistsGrid />
+      <section className=" px-20 py-12  mt-16">
+        <PyscologistsGrid />
       </section>
       <section className="px-20 py-12 h-[740px] mt-16">
         <CenteredImageGride
@@ -128,6 +128,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      </main>
-
+    </main>
+  );
+};
+export default Home;

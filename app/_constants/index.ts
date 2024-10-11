@@ -50,7 +50,7 @@ export const testimonials = [
 
 export const psycatrists = [
   {
-    photo: "/assets/icons/S3.svg",
+    photo: "/assets/images/fd-1.jpg",
     name: "Joseph Gonzaleze",
     titel: "Psycatrist",
   },

@@ -3,13 +3,20 @@ import Image from "next/image";
 import { psycologistCardPropsType } from "../type";
 const Psycologist = ({ photo, name, titel }: psycologistCardPropsType) => {
   return (
-    <div className="flex flex-col items-center border border-custum-gray_10 px-8 py-9 bg-custum-primary_25 uppercase text-custum-gray_100">
-      <Image src={photo} alt="photo" width={150} height={150} />
+    <div className="flex flex-col items-center border bg-custum-primary_10  px-9 py-12   text-custum-gray_50">
+      <div className="w-56 h-56  relative p-3">
+        <Image
+          src={photo}
+          alt="photo"
+          className="object-cover object-top rounded-full "
+          fill
+        />
+      </div>
 
-      <h5 className="text-heading_5 text-custum-grary_100 leading-loose mt-1">
+      <h5 className="text-heading_5 text-custum-primary_100 leading-loose mt-1 ">
         {name}
       </h5>
-      <h6 className="text-heading_6 text-custum-gray_50">{titel}</h6>
+      <p className="text-heading_6 text-custum-gray_50">{titel}</p>
     </div>
   );
 };

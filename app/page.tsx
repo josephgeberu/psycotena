@@ -19,20 +19,7 @@ import PyscologistsGrid from "./_components/psycologistGrid";
 
 export default function Home() {
   const services = serviceContent.map((service) => (
-    <ServiceCard
-      key={service.title}
-      title={service.title}
-      body={service.body}
-      iconUrl={service.iconUrl}
-    />
-  ));
-  const allTestimonials = testimonials.map((testimonial) => (
-    <TestimonialCard
-      key={testimonial.autor}
-      rating={testimonial.rating}
-      body={testimonial.body}
-      autor={testimonial.autor}
-    />
+    <ServiceCard key={service.title} {...service} />
   ));
 
   return (
@@ -48,18 +35,14 @@ export default function Home() {
       </section>
       <PyscologistsGrid />
 
-      <section className="px-20 py-12 h-[800px] mt-24">
-        <CenteredImageGride
-          topLeft={allTestimonials[0]}
-          middleImage={TestimonialImage}
-          topRight={allTestimonials[1]}
-          bottomLeft={allTestimonials[2]}
-          bottomRight={allTestimonials[3]}
-        />
+      <section className="grid grid-cols-3  px-20 py-12  ">
+        {testimonials.map((testimonial) => (
+          <TestimonialCard key={testimonial.autor} {...testimonial} />
+        ))}
       </section>
-      <section className=" callto  px-20 py-12 mt-12 text-white  ">
+      <section className=" callto  px-20 py-12 mt-12 text-white bg-custum-primary_25 ">
         <div className="flex flex-col gap-8 w-[700px] py-12">
-          <h2 className="text-white text-heading_2 uppercase font-bold ">
+          <h2 className="text-custum-gray_75 text-heading_2 uppercase font-bold ">
             transform Your Life with Expert Guidance.
           </h2>
           <div>
@@ -72,9 +55,9 @@ export default function Home() {
         </div>
       </section>
       <section className="contact px-20 py-12  text-center" id="contact ">
-        <h1 className="py-9 text-white text-heading_1 uppercase font-bold ">
+        <h2 className="py-9 text-white text-heading_2 uppercase font-bold ">
           Get in Touch
-        </h1>
+        </h2>
         <div className="flex justify-between ">
           <form
             action=" "

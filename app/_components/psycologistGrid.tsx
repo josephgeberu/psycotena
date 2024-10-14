@@ -10,7 +10,7 @@ import {
   ArrowLeftCircleIcon,
 } from "@heroicons/react/24/solid";
 
-const ITEMS_PER_PAGE = 6;
+const ITEMS_PER_PAGE = 3;
 
 const PyscologistsGrid = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -23,40 +23,40 @@ const PyscologistsGrid = () => {
 
   return (
     <section className="py-12 px-20 text-center">
-      <h1 className="text-white text-heading_1 uppercase font-bold">
+      <h2 className="text-white text-heading_2 uppercase font-bold">
         Meet our Psychologists
-      </h1>
+      </h2>
       <input
         type="search"
         placeholder="Search Psychologist (Name or Email)"
-        className="px-24 py-5 border border-custum-primary_50 mt-12 text-heading_6 w-[1000px] text-center rounded-full bg-gray-200"
+        className="px-24 py-5 border border-custum-primary_50 mt-12 text-heading_6 w-[1000px] text-center rounded-full bg-custum-primary_10"
       />
       <div className="flex items-center gap-x-[700px]">
         <ToggleAvaliable />
         <MagnifyingGlassIcon className="w-10 relative bottom-14 text-custum-gray_25" />
       </div>
-
-      <div className="grid grid-cols-3 gap-0 pt-12">
-        {currentPsychologists.map((psyc) => (
-          <PsychologistCard key={psyc.name} {...psyc} />
-        ))}
-      </div>
-      <div className="flex gap-6 justify-center py-6 bg-custum-primary_25">
+      <div className="flex justify-center  ">
         <button
           onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
           disabled={currentPage === 1}
-          className="fill-custum-primary_100 w-16"
+          className=" w-16 mt-12"
         >
-          <ArrowLeftCircleIcon className="fill-white w-12" />
+          <ArrowLeftCircleIcon className="fill-custum-primary_25 w-12" />
         </button>
+
+        <div className="flex gap-0 pt-12">
+          {currentPsychologists.map((psyc) => (
+            <PsychologistCard key={psyc.name} {...psyc} />
+          ))}
+        </div>
         <button
           onClick={() =>
             setCurrentPage((prev) => Math.min(prev + 1, totalPages))
           }
           disabled={currentPage === totalPages}
-          className="fill-custum-primary_100 w-16"
+          className=" w-16 mt-12 ml-5 "
         >
-          <ArrowRightCircleIcon className="fill-white w-12" />
+          <ArrowRightCircleIcon className="fill-custum-primary_25 w-12" />
         </button>
       </div>
     </section>

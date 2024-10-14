@@ -12,7 +12,7 @@ body {
   background-image: url("../public//assets/images/bodyback.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: right;
   
 }
 .service_section {
@@ -41,10 +41,10 @@ body {
 }
 
 .callto {
-  background-image: url("../public//assets/images/calltoback.jpg");
+  background-image: url("../public//assets/images/calltoback.png");
   background-size: cover;
   background-position: center;
-  filter:contrast(0.7)
+  
   
 }
 

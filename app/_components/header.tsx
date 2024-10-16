@@ -15,7 +15,7 @@ const Header = () => {
           Experienced psychologists offering compassionate care and effective
           treatment.
         </p>
-        <CustumButton className="flex bg-custum-primary_100 px-12 py-5  text-white gap-x-5 items-center text-heading_4 font-bold rounded-full">
+        <CustumButton className="flex border border-custum-primary_100  px-12 py-5  text-white gap-x-5 items-center text-heading_4 font-bold rounded-full  hover:bg-custum-primary_100 transition-colors">
           <Image src={Book} width="40" alt="Book" />
           <p>Book Now</p>
         </CustumButton>

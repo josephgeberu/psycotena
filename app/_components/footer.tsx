@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Logo } from "../_assetexport";
 const Footer = () => {
   return (
-    <div className="flex justify-between items-center px-20  text-custum-gray_50">
+    <div className="flex justify-between items-center px-20  text-custum-gray_50 mt-12">
       <div>
         <Image src={Logo} alt="Logo" width={50} />
       </div>

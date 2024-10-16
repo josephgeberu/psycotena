@@ -69,9 +69,9 @@ const NavLinks = () => {
         <li>
           <Link
             href="/account"
-            className="focus:text-custum-secondary_100 px-4  hover:text-custum-primary_50 transition-colors "
+            className="focus:text-custum-secondary_100 px-4  "
           >
-            <p className="text-custum-primary_100  border border-custum-primary_100 px-6 py-1 rounded-3xl text-center shadow-sm">
+            <p className="text-custum-primary_100  border border-custum-primary_100 px-6 py-1 rounded-3xl text-center shadow-sm hover:text-white hover:bg-custum-primary_100 transition-colors">
               Login
             </p>
           </Link>

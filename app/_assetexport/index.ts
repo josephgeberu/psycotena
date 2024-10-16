@@ -10,6 +10,8 @@ import Adress from "../../public/assets/images/address.png";
 import AboutImage from "../../public/assets/images/_c532d261-be77-45b4-b2bb-dc2146abefeb.jpeg";
 import ServiceImage from "../../public/assets/icons/service.svg";
 import TestimonialImage from "../../public/assets/images/testi.svg";
+import TestBack from "../../public/assets/images/tesyb.png";
+import CalltoBack from "../../public/assets/images/calltoback-1.png";
 
 export {
   Logo,
@@ -24,4 +26,6 @@ export {
   TestimonialImage,
   AboutImage,
   Adress,
+  TestBack,
+  CalltoBack,
 };

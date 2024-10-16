@@ -6,7 +6,7 @@ import {
   MapPinIcon,
 } from "@heroicons/react/24/solid";
 
-import { ServiceImage, Book, TestimonialImage } from "./_assetexport";
+import { ServiceImage, Book, CalltoBack } from "./_assetexport";
 
 import { serviceContent, testimonials } from "./_constants";
 
@@ -33,29 +33,45 @@ export default function Home() {
           bottomRight={services[3]}
         />
       </section>
-      <PyscologistsGrid />
-
-      <section className="grid grid-cols-3  px-20 py-12  ">
-        {testimonials.map((testimonial) => (
-          <TestimonialCard key={testimonial.autor} {...testimonial} />
-        ))}
+      <section className="py-12 px-20 text-center mt-16">
+        <PyscologistsGrid />
       </section>
-      <section className=" callto  px-20 py-12 mt-12 text-white bg-custum-primary_25 ">
-        <div className="flex flex-col gap-8 w-[700px] py-12">
-          <h2 className="text-custum-gray_75 text-heading_2 uppercase font-bold ">
-            transform Your Life with Expert Guidance.
-          </h2>
-          <div>
-            {" "}
-            <CustumButton className="flex bg-custum-primary_100 px-12 py-5  text-white gap-x-5 items-center text-heading_4 font-bold rounded-full">
-              <Image src={Book} width={40} alt="Book" />
-              <p>Book Now</p>
-            </CustumButton>
-          </div>
+
+      <section className=" px-20 py-12  text-center mt-4">
+        <h2 className="text-custum-primary_100 text-heading_2 uppercase ">
+          Our Testimonials
+        </h2>
+        <div className="flex mt-11 ">
+          {testimonials.map((testimonial) => (
+            <TestimonialCard key={testimonial.autor} {...testimonial} />
+          ))}
         </div>
       </section>
-      <section className="contact px-20 py-12  text-center" id="contact ">
-        <h2 className="py-9 text-white text-heading_2 uppercase font-bold ">
+      <section className="px-20  mt-24 text-white bg-custum-primary_10 relative">
+        <div className="flex w-[700px] ">
+          <div className="flex flex-col gap-8  py-12">
+            <h2 className="text-custum-primary_100 text-heading_2 uppercase ">
+              transform Your Life with Expert Guidance.
+            </h2>
+            <div>
+              {" "}
+              <CustumButton className="flex bg-custum-primary_100 px-12 py-5  text-white gap-x-5 items-center text-heading_4 font-bold rounded-full">
+                <Image src={Book} width={40} alt="Book" />
+                <p>Book Now</p>
+              </CustumButton>
+            </div>
+          </div>
+
+          <Image
+            src={CalltoBack}
+            alt="background"
+            width={550}
+            className="absolute right-20 bottom-0"
+          />
+        </div>
+      </section>
+      <section className="contact px-20 py-12 mt-9 text-center" id="contact ">
+        <h2 className="py-9 text-custum-primary_100 text-heading_2 uppercase  ">
           Get in Touch
         </h2>
         <div className="flex justify-between ">

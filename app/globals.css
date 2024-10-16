@@ -28,6 +28,7 @@ body {
 }
 .middle {
   grid-area: middle;
+  margin-top: 170px;
 }
 
 .topRight {
@@ -40,13 +41,6 @@ body {
   grid-area: bottomRight;
 }
 
-.callto {
-  background-image: url("../public//assets/images/calltoback.png");
-  background-size: cover;
-  background-position: center;
-  
-  
-}
 
 .toggle-container {
   position: relative;

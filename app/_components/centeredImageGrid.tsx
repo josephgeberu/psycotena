@@ -10,7 +10,7 @@ const CenteredImageGride = ({
   bottomRight,
 }: centerImageGridType) => {
   return (
-    <div className="  max-h-[799] grid  items-center    service_section  gap-y-28 bg-custum-primary_25  ">
+    <div className="  max-h-[799] grid  items-center   service_section  gap-y-28 ">
       <div className="topLeft">{topLeft}</div>
       <div className="middle">
         <Image src={middleImage} alt="Service" className="service_image" />

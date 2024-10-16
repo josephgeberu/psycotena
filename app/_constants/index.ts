@@ -24,25 +24,25 @@ export const serviceContent = [
 export const testimonials = [
   {
     rating: "⭐",
-    body: "TenaPsyco was a lifeline for me during a difficult time. Their compassionate and skilled therapists helped me navigate through my challenges and find healing.",
+    body: "TenaPsyco was a lifeline for me during a difficult time.",
 
     autor: "Joseph",
   },
   {
     rating: "⭐",
-    body: "TenaPsyco was a lifeline for me during a difficult time. Their compassionate and skilled therapists helped me navigate through my challenges and find healing.",
+    body: "TenaPsyco was a lifeline for me during a difficult time.",
 
     autor: "Joseph",
   },
   {
     rating: "⭐",
-    body: "TenaPsyco was a lifeline for me during a difficult time. Their compassionate and skilled therapists helped me navigate through my challenges and find healing.",
+    body: "TenaPsyco was a lifeline for me during a difficult time.",
 
     autor: "Joseph",
   },
   {
     rating: "⭐",
-    body: "TenaPsyco was a lifeline for me during a difficult time. Their compassionate and skilled therapists helped me navigate through my challenges and find healing.",
+    body: "TenaPsyco was a lifeline for me during a difficult time.",
 
     autor: "Joseph",
   },

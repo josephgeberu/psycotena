@@ -1,5 +1,3 @@
-import { StaticImageData } from "next/image";
-
 export interface serviceCardPropsType {
   title: string;
   body: string;

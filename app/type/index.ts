@@ -6,7 +6,7 @@ export interface serviceCardPropsType {
   iconUrl: string;
 }
 export interface psycologistCardPropsType {
-  photo: StaticImageData;
+  photo: string;
   name: string;
   titel: string;
 }

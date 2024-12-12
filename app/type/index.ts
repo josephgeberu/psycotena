@@ -1,7 +1,7 @@
 export interface serviceCardPropsType {
   title: string;
   body: string;
-  iconUrl: any;
+  iconUrl: string;
 }
 export interface psycologistCardPropsType {
   photo: string;
@@ -10,10 +10,10 @@ export interface psycologistCardPropsType {
 }
 export interface centerImageGridType {
   middleImage: any;
-  topRight: any;
-  topLeft: any;
-  bottomLeft: any;
-  bottomRight: any;
+  topRight: string;
+  topLeft: string;
+  bottomLeft: string;
+  bottomRight: string;
 }
 export interface testimonialCardType {
   rating: string;

@@ -1,19 +1,21 @@
+import { StaticImageData } from "next/image";
+
 export interface serviceCardPropsType {
   title: string;
   body: string;
   iconUrl: string;
 }
 export interface psycologistCardPropsType {
-  photo: string;
+  photo: StaticImageData;
   name: string;
   titel: string;
 }
 export interface centerImageGridType {
-  middleImage: string;
-  topRight: string;
-  topLeft: string;
-  bottomLeft: string;
-  bottomRight: string;
+  middleImage: StaticImageData;
+  topRight: React.ReactNode;
+  topLeft: React.ReactNode;
+  bottomLeft: React.ReactNode;
+  bottomRight: React.ReactNode;
 }
 export interface testimonialCardType {
   rating: string;

@@ -5,6 +5,7 @@ const ToggleAvaliable = () => {
 
   const toggler = () => {
     setAvaliable((inital) => !inital);
+    return avaliable;
   };
   return (
     <div className="toggle-container flex gap-4 justify-center items-center w-52 bottom-[57px] left-36 ">

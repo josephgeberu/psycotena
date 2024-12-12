@@ -9,7 +9,7 @@ export interface psycologistCardPropsType {
   titel: string;
 }
 export interface centerImageGridType {
-  middleImage: any;
+  middleImage: string;
   topRight: string;
   topLeft: string;
   bottomLeft: string;
